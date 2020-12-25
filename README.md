@@ -41,7 +41,7 @@ Either of the can be executed separately by setting the parameter `-DsampleOptio
 
 After the build is successful, trigger:
 ```
-$ java -DprofileName=DEFAULT -DtestConfig=/home/<your-username>/.oci/config -DsampleOption=Backup -Dsun.net.http.allowRestrictedHeaders=true -classpath target/mds-1.0-SNAPSHOT.jar com.oci.mds.Runner server config/iad-ad-1.conf
+$ java -DprofileName=DEFAULT -DtestConfig=/home/<your-username>/.oci/config -DsampleOption=<DbSystem | Backup> -Dsun.net.http.allowRestrictedHeaders=true -classpath target/mds-1.0-SNAPSHOT.jar com.oci.mds.Runner server config/iad-ad-1.conf
 ```
 
 ### IntelliJ Configuration
@@ -54,11 +54,11 @@ Click in the **+** button to add a new configuration and select **Application**.
 
 **Main class:** com.oci.mds.Runner
 
-**VM Options:** -DprofileName=`PROFILE` -DtestConfig=/home/`your-username`/.oci/config -DsampleOption=`DbSystem[|Backup]`
+**VM Options:** -DprofileName=**<PROFILE>** -DtestConfig=/home/**<your-username>**/.oci/config -DsampleOption=**<DbSystem | Backup>**
 
-**Program arguments:** server config/`config-file`
+**Program arguments:** server config/**<config-file>**
 
-**Working directory:** /home/`your-folder`/oci-mds
+**Working directory:** /home/**<your-folder>**/oci-mds
 
 
 ## Execution logs
