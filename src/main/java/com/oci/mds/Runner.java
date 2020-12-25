@@ -1,12 +1,12 @@
 package com.oci.mds;
 
 import com.oci.mds.configuration.ProjectConfiguration;
+import com.oci.mds.configuration.reader.TypeSafeFileReader;
+import com.oci.mds.configuration.reader.TypeSafeConfigProvider;
 import com.oci.mds.sample.BackupSample;
 import com.oci.mds.sample.DbSystemSample;
 
 import com.oci.mds.util.ShutDownHook;
-import com.oracle.pic.commons.configuration.TypeSafeFileReader;
-import com.oracle.pic.commons.service.configuration.TypesafeConfigProvider;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -21,7 +21,7 @@ public class Runner extends Application<ProjectConfiguration> {
     @Override
     public void initialize(Bootstrap<ProjectConfiguration> bootstrap) {
         TypeSafeFileReader fileReader = new TypeSafeFileReader();
-        bootstrap.setConfigurationSourceProvider(new TypesafeConfigProvider(fileReader));
+        bootstrap.setConfigurationSourceProvider(new TypeSafeConfigProvider(fileReader));
     }
 
     @Override
