@@ -7,12 +7,7 @@ import com.oracle.bmc.identity.IdentityClient;
 import com.oracle.bmc.mysql.DbBackupsClient;
 import com.oracle.bmc.mysql.DbSystemClient;
 import com.oracle.bmc.mysql.MysqlaasClient;
-import com.oracle.pic.commons.configuration.location.Location;
-import com.oracle.pic.commons.configuration.location.LocationOverride;
-import com.oracle.pic.commons.service.configuration.ServiceConfiguration;
-import com.oracle.pic.commons.util.Realm;
-import com.oracle.pic.commons.util.Region;
-import lombok.AccessLevel;
+import io.dropwizard.Configuration;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -37,19 +32,14 @@ import java.util.Properties;
     "tenantId"
     })
 
-public class OciConfiguration extends ServiceConfiguration {
+public class OciConfiguration extends Configuration {
 
     private String regionHost;
 
+    private String stage;
+
     @NotNull
-    private Realm realm;
-
-    @Getter(AccessLevel.NONE)
-    @Setter(AccessLevel.NONE)
-    private Location location;
-
-    @Getter(AccessLevel.NONE)
-    private LocationOverride locationOverride;
+    private String realm;
 
     private String availabilityDomain;
     private String logicalADName;
@@ -68,7 +58,7 @@ public class OciConfiguration extends ServiceConfiguration {
     protected DbSystemClient dbSystemClient;
     protected DbBackupsClient dbBackupsClient;
 
-    public OciConfiguration() {
+    OciConfiguration() {
         try {
             ociConfigPath = System.getProperty("testConfig");
             if (ociConfigPath == null) {
@@ -98,26 +88,5 @@ public class OciConfiguration extends ServiceConfiguration {
         } catch (Exception ex) {
             log.error(ex.getMessage());
         }
-    }
-
-    /**
-     * Allow config to override the region and AD so we don't look them up from /etc/region and
-     * /etc/availability-domain.
-     *
-     * @return Location
-     */
-    private Location resolveLocation() {
-        return (locationOverride == null) ? Location.fromEnvironmentFiles() : Location.fromLocationOverride(locationOverride);
-    }
-
-    private Location getLocation() {
-        if (location == null) {
-            location = resolveLocation();
-        }
-        return location;
-    }
-
-    public Region getRegion() {
-        return getLocation().getRegion();
     }
 }

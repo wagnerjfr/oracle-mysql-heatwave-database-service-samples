@@ -10,20 +10,12 @@
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.4</version>
         <executions>
           <execution>
             <phase>package</phase>
             <goals>
               <goal>shade</goal>
             </goals>
-            <configuration>
-              <transformers>
-                <transformer>
-                  <mainClass>com.oci.mds.Runner</mainClass>
-                </transformer>
-              </transformers>
-            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -55,6 +47,7 @@
     <jackson-version>2.9.9</jackson-version>
     <mysqlaas-api-version>12.0.0</mysqlaas-api-version>
     <maven.compiler.source>1.8</maven.compiler.source>
+    <bouncycastle-version>1.0.2</bouncycastle-version>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 </project>
