@@ -12,7 +12,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.validation.constraints.NotNull;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -35,10 +34,7 @@ import java.util.Properties;
 public class OciConfiguration extends Configuration {
 
     private String regionHost;
-
     private String stage;
-
-    @NotNull
     private String realm;
 
     private String availabilityDomain;
