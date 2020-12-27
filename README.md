@@ -54,7 +54,7 @@ Click in the **+** button to add a new configuration and select **Application**.
 
 **Main class:** com.oci.mds.Runner
 
-**VM Options:** -DprofileName=**YOUR-PROFILE>** -DtestConfig=/home/**your-username**/.oci/config -DsampleOption=**DbSystem|Backup**
+**VM Options:** -DprofileName=**YOUR-PROFILE** -DtestConfig=/home/**your-username**/.oci/config -DsampleOption=**DbSystem|Backup**
 
 **Program arguments:** server config/**config-file**
 
