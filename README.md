@@ -1,4 +1,4 @@
-# oracle-mysql-database-service-java-sdk
+# oracle-mysql-database-service-samples
 This repository shows two simple examples how to create [Oracle MySQL Database Service (MDS)](https://www.oracle.com/mysql/)
 resources "DbSystem" and "Backup" using [SDK for Java](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/javasdk.htm).
 
