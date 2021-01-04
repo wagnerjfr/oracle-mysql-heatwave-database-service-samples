@@ -7,7 +7,7 @@
     <groupId>com.oci</groupId>
     <artifactId>oci-mds-samples</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>oracle-mysql-database-service-java-sdk</name>
+    <name>oracle-mysql-database-service-samples</name>
     <description>
         This repository shows two simple examples how to create Oracle MySQL Database Service (MDS) resources "DbSystem" and "Backup" using SDK for Java.
     </description>
