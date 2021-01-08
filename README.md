@@ -63,7 +63,7 @@ Click in the **+** button to add a new configuration and select **Application**.
 
 ## Execution logs
 
-- DbSystem [[full logs]](https://github.com/wagnerjfr/oracle-mysql-database-service-java-sdk/blob/master/logs/dbsystemSample.log)
+- DbSystem [[full logs]](https://github.com/wagnerjfr/oracle-mysql-database-service-java-sdk/blob/main/logs/dbsystemSample.log)
 ```
 ....
 INFO  2020-12-24 19:16:20 c.o.m.m.AbstractManager: Waiting to become [Active] ... executed time 626 seconds (timeout: 1800s)
@@ -87,7 +87,7 @@ INFO  2020-12-24 19:17:22 c.o.m.m.AbstractManager: Waiting to become [Inactive] 
 ....
 ```
 
-- Backup [[full logs]](https://github.com/wagnerjfr/oracle-mysql-database-service-java-sdk/blob/master/logs/backupSample.log)
+- Backup [[full logs]](https://github.com/wagnerjfr/oracle-mysql-database-service-java-sdk/blob/main/logs/backupSample.log)
 ```
 ....
 INFO  2020-12-24 19:41:35 c.o.m.m.AbstractManager: Waiting to become [Active] ... executed time 688 seconds (timeout: 1800s)
