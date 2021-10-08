@@ -37,11 +37,15 @@ The project has 2 samples: DbSystem and Backup.
 - **DbSystem**: create DbSystem, stop DbSystem, start DbSystem and delete DbSystem
 - **Backup**: create DbSystem, create Backup, delete DbSystem and delete Backup 
 
-Either of the can be executed separately by setting the parameter `-DsampleOption` which can be `DbSystem` or `Backup`.
+They can be executed separately by setting the parameter `-DsampleOption` which can be `DbSystem` or `Backup`.
 
 After the build is successful, trigger:
 ```
-$ java -DprofileName=DEFAULT -DtestConfig=/home/<your-username>/.oci/config -DsampleOption=<DbSystem | Backup> -Dsun.net.http.allowRestrictedHeaders=true -classpath target/oci-mds-samples-1.0-SNAPSHOT.jar com.oci.mds.Runner server config/iad-ad-1.conf
+$ java -DprofileName=DEFAULT \
+  -DtestConfig=/home/<your-username>/.oci/config -DsampleOption=<DbSystem | Backup> \
+  -Dsun.net.http.allowRestrictedHeaders=true \
+  -classpath target/oci-mds-samples-1.0-SNAPSHOT.jar com.oci.mds.Runner \
+  server config/iad-ad-1.conf
 ```
 
 ### IntelliJ Configuration
