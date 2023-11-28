@@ -1,5 +1,5 @@
 # oracle-mysql-heatwave-database-service-samples
-This repository shows two simple examples how to create [MySQL HeatWave Database Service (MDS)](https://www.oracle.com/mysql/)
+This repository shows two simple examples how to create [MySQL HeatWave Database Service (MHS)](https://www.oracle.com/mysql/)
 resources "DbSystem" and "Backup" using [SDK for Java](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/javasdk.htm).
 
 ## Documentation
