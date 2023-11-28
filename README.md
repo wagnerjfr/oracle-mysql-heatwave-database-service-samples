@@ -1,9 +1,9 @@
-# oracle-mysql-database-service-samples
-This repository shows two simple examples how to create [Oracle MySQL Database Service (MDS)](https://www.oracle.com/mysql/)
+# oracle-heatwave-database-service-samples
+This repository shows two simple examples how to create [Oracle HeatWave Database Service (MDS)](https://www.oracle.com/mysql/)
 resources "DbSystem" and "Backup" using [SDK for Java](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/javasdk.htm).
 
 ## Documentation
-- [Oracle MySQL Database Service](https://docs.oracle.com/en-us/iaas/mysql-database/)
+- [Oracle HeatWave Database Service](https://docs.oracle.com/en-us/iaas/mysql-database/)
 - [Oracle Cloud Infrastructure SDK for Java - GitHub](https://github.com/oracle/oci-java-sdk) 
 - For basic set up, see [Getting Started](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/javasdkgettingstarted.htm).
 - For details on compatibility, advanced configurations, and add-ons, see [Configuration](https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/javasdkconfig.htm).
